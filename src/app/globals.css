@@ -1,33 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+  /* background-color: yellow; */
+  /* Change color to a darker shade */
+}
+h2 {
+  font-size: 40px;
+  color: yellow;
+}
+.form-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.input-field {
+  width: calc(100% - 80px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* Add margin bottom */
+  padding: 10px;
+  /* Increase padding */
+  border: 2px solid #a91d1d;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  /* Add transition for smoother hover effect */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.input-field:focus {
+  border-color: #007bff;
+  /* Change border color on focus */
+}
+
+.button {
+  padding: 10px 20px;
+  /* Increase padding */
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Add transition for smoother hover effect */
+}
+
+.button:hover {
+  background-color: red;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  /* Add transition for smoother hover effect */
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 40rem;
+  /* border-radius: 50%; */
+  margin-bottom: 20px;
+}
+.cafe-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
 }
